@@ -1,0 +1,3 @@
+was_reassigned,total_incidents,sla_compliance_rate,median_resolution_hours,average_resolution_hours,median_closure_hours
+False,13549,78.3895490442099,0.6833333333333333,94.983898469827,121.25
+True,11369,45.580086199313925,79.93333333333334,266.0756023124101,242.56666666666663

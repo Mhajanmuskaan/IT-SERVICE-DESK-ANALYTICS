@@ -1,0 +1,87 @@
+===========================================================================
+IT SERVICE DESK — EXPLORATORY ANALYSIS OVERVIEW
+===========================================================================
+
+1. HEADLINE KPIs
+Total incidents: 24,918
+SLA met: 15,803
+SLA breached: 9,115
+SLA compliance rate: 63.42%
+Median resolution time: 22.10 hours
+Average resolution time: 178.17 hours
+Median closure time: 145.87 hours
+Incidents reassigned: 11,369
+Reassignment rate: 45.63%
+Incidents reopened: 275
+Reopen rate: 1.10%
+
+2. MONTHLY PERFORMANCE
+opened_month_start  total_incidents  sla_met  sla_compliance_rate  median_resolution_hours  average_resolution_hours  reassigned_incidents  reassignment_rate  sla_breached
+        2016-02-01              207      134                64.73                    53.79                    331.20                    83              40.10            73
+        2016-03-01             8995     3585                39.86                    71.18                    240.84                  5025              55.86          5410
+        2016-04-01             7934     6085                76.70                     4.33                    146.01                  3244              40.89          1849
+        2016-05-01             7508     5820                77.52                     2.90                    132.76                  2887              38.45          1688
+        2016-06-01                5        4                80.00                    26.65                   1086.04                     2              40.00             1
+        2016-07-01               14       11                78.57                    34.79                    279.47                    10              71.43             3
+        2016-08-01               15        7                46.67                   145.18                    519.87                     7              46.67             8
+        2016-09-01               12        7                58.33                    64.45                    433.44                     5              41.67             5
+        2016-10-01               16        7                43.75                   110.98                    652.38                     9              56.25             9
+        2016-11-01               26       17                65.38                     1.14                    326.33                    10              38.46             9
+        2016-12-01               37       23                62.16                    43.92                    219.52                    15              40.54            14
+        2017-01-01               94       53                56.38                    57.10                    197.94                    52              55.32            41
+        2017-02-01               55       50                90.91                     2.87                     20.76                    20              36.36             5
+
+3. PERFORMANCE BY PRIORITY
+ priority_level     priority  total_incidents  sla_compliance_rate  median_resolution_hours  average_resolution_hours  reassignment_rate
+              1 1 - Critical              270                 1.85                    80.24                    266.08              58.52
+              2     2 - High              408                 0.49                    38.23                    152.46              62.50
+              3 3 - Moderate            23466                64.54                    21.55                    174.35              45.44
+              4      4 - Low              774                84.11                     5.02                    283.19              37.86
+
+4. REASSIGNED VERSUS NON-REASSIGNED INCIDENTS
+ was_reassigned  total_incidents  sla_compliance_rate  median_resolution_hours  average_resolution_hours  median_closure_hours
+          False            13549                78.39                     0.68                     94.98                121.25
+           True            11369                45.58                    79.93                    266.08                242.57
+
+5. TOP 15 CATEGORIES BY INCIDENT VOLUME
+   category  total_incidents  sla_compliance_rate  median_resolution_hours  reassignment_rate
+Category 42             3558                80.64                     0.63              34.65
+Category 26             3338                69.53                     5.58              47.87
+Category 53             2678                62.32                    27.88              47.05
+Category 46             2432                48.44                    65.71              44.28
+Category 32             1522                75.23                     1.14              31.47
+ Category 9             1155                59.22                    45.77              29.44
+Category 37             1144                66.35                    22.55              46.15
+Category 23             1063                52.49                    46.30              87.02
+Category 20             1047                76.98                     1.90              43.08
+Category 57              971                59.84                    42.58              64.47
+Category 61              810                47.04                    95.38              60.62
+Category 24              640                52.66                    72.22              43.44
+Category 45              602                25.91                   147.73              34.39
+Category 28              551                70.96                     0.18              39.75
+Category 51              549                80.15                     0.20              18.58
+
+6. TOP 15 ASSIGNMENT GROUPS BY INCIDENT VOLUME
+assignment_group  total_incidents  sla_compliance_rate  median_resolution_hours  reassignment_rate
+        Group 70             9444                83.84                     0.33              21.08
+             NaN             2157                48.63                    50.52              83.03
+        Group 25             1243                42.80                   111.70              57.84
+        Group 39             1199                68.81                    18.82              77.90
+        Group 24             1060                64.81                    24.95              53.96
+        Group 23              811                58.69                    27.80              70.65
+        Group 64              716                89.11                     0.05              14.39
+        Group 73              576                53.99                    58.17              59.55
+        Group 28              545                53.58                    49.20              63.67
+        Group 27              518                58.30                    29.30              53.67
+        Group 20              394                41.62                    91.48              71.32
+        Group 66              376                30.32                   207.77              42.82
+        Group 72              367                36.78                   123.33              80.93
+        Group 10              343                25.07                   402.37              41.69
+        Group 65              336                43.45                    79.00              38.99
+
+7. LONG-RUNNING INCIDENTS
+Resolved after more than 7 days: 5,360
+Resolved after more than 30 days: 1,149
+Resolved after more than 90 days: 335
+
+Analysis tables exported successfully.
