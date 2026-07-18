@@ -1,0 +1,128 @@
+ year_number | month_number | month_name | total_incidents | sla_compliance_percentage | median_resolution_hours | average_resolution_hours | reassignment_percentage 
+-------------+--------------+------------+-----------------+---------------------------+-------------------------+--------------------------+-------------------------
+        2016 |            2 | February   |             207 |                     64.73 |                   53.79 |                   331.20 |                   40.10
+        2016 |            3 | March      |            8995 |                     39.86 |                   71.18 |                   240.84 |                   55.86
+        2016 |            4 | April      |            7934 |                     76.70 |                    4.33 |                   146.01 |                   40.89
+        2016 |            5 | May        |            7508 |                     77.52 |                    2.90 |                   132.76 |                   38.45
+        2016 |            6 | June       |               5 |                     80.00 |                   26.65 |                  1086.04 |                   40.00
+        2016 |            7 | July       |              14 |                     78.57 |                   34.79 |                   279.47 |                   71.43
+        2016 |            8 | August     |              15 |                     46.67 |                  145.18 |                   519.87 |                   46.67
+        2016 |            9 | September  |              12 |                     58.33 |                   64.45 |                   433.44 |                   41.67
+        2016 |           10 | October    |              16 |                     43.75 |                  110.98 |                   652.38 |                   56.25
+        2016 |           11 | November   |              26 |                     65.38 |                    1.14 |                   326.33 |                   38.46
+        2016 |           12 | December   |              37 |                     62.16 |                   43.92 |                   219.52 |                   40.54
+        2017 |            1 | January    |              94 |                     56.38 |                   57.10 |                   197.94 |                   55.32
+        2017 |            2 | February   |              55 |                     90.91 |                    2.87 |                    20.76 |                   36.36
+(13 rows)
+
+ incidents_with_resolution_time | p50_hours | p75_hours | p90_hours | p95_hours | p99_hours 
+--------------------------------+-----------+-----------+-----------+-----------+-----------
+                          23362 |     22.10 |    148.48 |    381.55 |    710.52 |   2843.40
+(1 row)
+
+      duration_band      | total_incidents | percentage_of_incidents 
+-------------------------+-----------------+-------------------------
+ Under 1 hour            |            7530 |                   30.22
+ 1-8 hours               |            2952 |                   11.85
+ 8-24 hours              |            1590 |                    6.38
+ 1-3 days                |            3023 |                   12.13
+ 3-7 days                |            2907 |                   11.67
+ 7-30 days               |            4211 |                   16.90
+ 30-90 days              |             814 |                    3.27
+ Over 90 days            |             335 |                    1.34
+ Missing resolution time |            1556 |                    6.24
+(9 rows)
+
+ volume_rank | category_name | total_incidents | volume_percentage | cumulative_volume_percentage 
+-------------+---------------+-----------------+-------------------+------------------------------
+           1 | Category 42   |            3558 |             14.28 |                        14.28
+           2 | Category 26   |            3338 |             13.40 |                        27.67
+           3 | Category 53   |            2678 |             10.75 |                        38.42
+           4 | Category 46   |            2432 |              9.76 |                        48.18
+           5 | Category 32   |            1522 |              6.11 |                        54.29
+           6 | Category 9    |            1155 |              4.64 |                        58.93
+           7 | Category 37   |            1144 |              4.59 |                        63.52
+           8 | Category 23   |            1063 |              4.27 |                        67.78
+           9 | Category 20   |            1047 |              4.20 |                        71.98
+          10 | Category 57   |             971 |              3.90 |                        75.88
+          11 | Category 61   |             810 |              3.25 |                        79.13
+          12 | Category 24   |             640 |              2.57 |                        81.70
+          13 | Category 45   |             602 |              2.42 |                        84.12
+          14 | Category 28   |             551 |              2.21 |                        86.33
+          15 | Category 51   |             549 |              2.20 |                        88.53
+          16 | Category 35   |             517 |              2.07 |                        90.61
+          17 | Category 34   |             501 |              2.01 |                        92.62
+          18 | Category 40   |             436 |              1.75 |                        94.37
+          19 | Category 44   |             302 |              1.21 |                        95.58
+          20 | Category 19   |             245 |              0.98 |                        96.56
+          21 | Category 43   |             153 |              0.61 |                        97.17
+          22 | Category 13   |             126 |              0.51 |                        97.68
+          23 | Category 55   |             106 |              0.43 |                        98.11
+          24 | Category 17   |              79 |              0.32 |                        98.42
+          25 | Category 8    |              56 |              0.22 |                        98.65
+          26 | Category 22   |              52 |              0.21 |                        98.86
+          27 | Category 38   |              42 |              0.17 |                        99.02
+          28 | Category 56   |              40 |              0.16 |                        99.19
+          29 | Category 7    |              31 |              0.12 |                        99.31
+          30 | Category 54   |              30 |              0.12 |                        99.43
+          31 | Category 50   |              24 |              0.10 |                        99.53
+          32 | Category 33   |              16 |              0.06 |                        99.59
+          33 | Category 31   |              15 |              0.06 |                        99.65
+          34 | Category 63   |              11 |              0.04 |                        99.69
+          35 | Category 5    |              10 |              0.04 |                        99.74
+          36 | Category 21   |               8 |              0.03 |                        99.77
+          37 | Unknown       |               7 |              0.03 |                        99.80
+          37 | Category 59   |               7 |              0.03 |                        99.82
+          39 | Category 47   |               6 |              0.02 |                        99.85
+          40 | Category 52   |               5 |              0.02 |                        99.87
+          40 | Category 2    |               5 |              0.02 |                        99.89
+          40 | Category 4    |               5 |              0.02 |                        99.91
+          43 | Category 25   |               4 |              0.02 |                        99.92
+          43 | Category 62   |               4 |              0.02 |                        99.94
+          45 | Category 29   |               3 |              0.01 |                        99.95
+          45 | Category 10   |               3 |              0.01 |                        99.96
+          47 | Category 16   |               2 |              0.01 |                        99.97
+          47 | Category 6    |               2 |              0.01 |                        99.98
+          49 | Category 30   |               1 |              0.00 |                        99.98
+          49 | Category 12   |               1 |              0.00 |                        99.99
+          49 | Category 14   |               1 |              0.00 |                        99.99
+          49 | Category 58   |               1 |              0.00 |                       100.00
+          49 | Category 48   |               1 |              0.00 |                       100.00
+(53 rows)
+
+ assignment_group_name | total_incidents | sla_compliance_percentage | sla_gap_from_overall | median_resolution_hours | performance_status 
+-----------------------+-----------------+---------------------------+----------------------+-------------------------+--------------------
+ Group 10              |             343 |                     25.07 |               -38.35 |                  402.37 | Below overall rate
+ Group 66              |             376 |                     30.32 |               -33.10 |                  207.77 | Below overall rate
+ Group 31              |             205 |                     31.71 |               -31.71 |                  101.12 | Below overall rate
+ Group 57              |             313 |                     31.95 |               -31.47 |                  167.15 | Below overall rate
+ Group 72              |             367 |                     36.78 |               -26.64 |                  123.33 | Below overall rate
+ Group 29              |             257 |                     37.74 |               -25.68 |                  148.17 | Below overall rate
+ Group 33              |             201 |                     38.81 |               -24.61 |                  114.50 | Below overall rate
+ Group 20              |             394 |                     41.62 |               -21.80 |                   91.48 | Below overall rate
+ Group 25              |            1243 |                     42.80 |               -20.62 |                  111.70 | Below overall rate
+ Group 65              |             336 |                     43.45 |               -19.97 |                   79.00 | Below overall rate
+ Group 6               |             257 |                     44.36 |               -19.06 |                  120.85 | Below overall rate
+ Group 22              |             239 |                     45.61 |               -17.81 |                   70.83 | Below overall rate
+ Group 54              |             200 |                     47.00 |               -16.42 |                   75.60 | Below overall rate
+ Unknown               |            2157 |                     48.63 |               -14.79 |                   50.53 | Below overall rate
+ Group 28              |             545 |                     53.58 |                -9.84 |                   49.20 | Below overall rate
+ Group 73              |             576 |                     53.99 |                -9.43 |                   58.17 | Below overall rate
+ Group 27              |             518 |                     58.30 |                -5.12 |                   29.30 | Below overall rate
+ Group 23              |             811 |                     58.69 |                -4.73 |                   27.80 | Below overall rate
+ Group 55              |             293 |                     61.09 |                -2.33 |                    7.67 | Below overall rate
+ Group 30              |             268 |                     62.69 |                -0.73 |                   26.28 | Below overall rate
+ Group 24              |            1060 |                     64.81 |                 1.39 |                   24.95 | Above overall rate
+ Group 39              |            1199 |                     68.81 |                 5.39 |                   18.82 | Above overall rate
+ Group 70              |            9444 |                     83.84 |                20.42 |                    0.33 | Above overall rate
+ Group 64              |             716 |                     89.11 |                25.69 |                    0.05 | Above overall rate
+(24 rows)
+
+       routing_group        | total_incidents | sla_compliance_percentage | median_resolution_hours | average_resolution_hours 
+----------------------------+-----------------+---------------------------+-------------------------+--------------------------
+ No reassignment            |           13549 |                     78.39 |                    0.68 |                    94.98
+ One reassignment           |            6238 |                     57.07 |                   42.05 |                   173.32
+ Two or three reassignments |            3517 |                     37.42 |                  122.93 |                   335.62
+ Four or more reassignments |            1614 |                     18.96 |                  239.31 |                   472.47
+(4 rows)
+
